@@ -1,0 +1,179 @@
+:root {
+  --bs-body-bg: #fff7fb;
+  --bs-body-color: #3b2a33;
+
+  --beauty-bg: #fff7fb;
+  --beauty-bg-soft: #ffe6f2;
+  --beauty-primary: #d63384;
+  --beauty-primary-soft: rgba(214, 51, 132, 0.16);
+  --beauty-primary-dark: #b0276c;
+  --beauty-accent: #f8c1d8;
+  --beauty-accent-soft: #ffe9f3;
+  --beauty-text-main: #2b1c24;
+  --beauty-muted: #8e6b80;
+  --beauty-border-soft: rgba(214, 51, 132, 0.18);
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top, rgba(214, 51, 132, 0.06), transparent),
+    radial-gradient(circle at bottom, rgba(255, 182, 193, 0.12), transparent),
+    var(--beauty-bg);
+  color: var(--beauty-text-main);
+}
+
+/* App shell */
+
+#app {
+  color: var(--beauty-text-main);
+}
+
+/* Navbar в стилистике салона красоты */
+
+.navbar.bg-dark {
+  background: linear-gradient(
+    90deg,
+    #2b1c24,
+    #3b2431,
+    #5b2f3e
+  ) !important;
+}
+
+.navbar-brand {
+  letter-spacing: 0.08em;
+}
+
+.navbar-brand small {
+  color: var(--beauty-accent) !important;
+}
+
+.nav-link {
+  color: #f8f9fa !important;
+  opacity: 0.82;
+  transition: all 0.18s ease;
+  border-radius: 999px;
+  padding-inline: 1rem !important;
+}
+
+.nav-link:hover,
+.nav-link.router-link-active {
+  opacity: 1;
+  background-color: rgba(248, 249, 250, 0.08);
+  color: #fff !important;
+}
+
+/* Hero / карточки на главной и страницах */
+
+.hero {
+  border-radius: 1.8rem;
+  background:
+    radial-gradient(circle at top left, rgba(214, 51, 132, 0.14), transparent),
+    radial-gradient(circle at bottom right, rgba(255, 192, 203, 0.18), transparent),
+    #2b1c24;
+  color: #fff;
+}
+
+.hero .lead {
+  color: rgba(255, 245, 250, 0.9);
+}
+
+.hero .btn-warning {
+  background-color: var(--beauty-primary);
+  border-color: var(--beauty-primary);
+  color: #fff;
+}
+
+.hero .btn-warning:hover {
+  background-color: var(--beauty-primary-dark);
+  border-color: var(--beauty-primary-dark);
+}
+
+/* Информационные плитки */
+
+.info-tile {
+  background: linear-gradient(
+      135deg,
+      rgba(214, 51, 132, 0.08),
+      rgba(12, 10, 10, 0.96)
+    ),
+    #2b1c24;
+  border: 1px solid var(--beauty-border-soft);
+  box-shadow: 0 18px 40px rgba(26, 15, 22, 0.7);
+}
+
+/* Карточки услуг */
+
+.card {
+  border-radius: 1.4rem;
+  border: 1px solid rgba(214, 51, 132, 0.06);
+}
+
+.card .card-title {
+  color: var(--beauty-text-main);
+}
+
+.card .card-text.small.text-muted {
+  color: var(--beauty-muted) !important;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(59, 42, 51, 0.24);
+  border-color: var(--beauty-primary-soft);
+}
+
+/* Кнопки в общем стиле */
+
+.btn-primary,
+.btn-dark {
+  background-color: var(--beauty-primary);
+  border-color: var(--beauty-primary);
+}
+
+.btn-primary:hover,
+.btn-dark:hover {
+  background-color: var(--beauty-primary-dark);
+  border-color: var(--beauty-primary-dark);
+}
+
+.btn-outline-primary {
+  color: var(--beauty-primary);
+  border-color: var(--beauty-primary);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary.active {
+  color: #fff;
+  background-color: var(--beauty-primary);
+  border-color: var(--beauty-primary);
+}
+
+/* Бейджи и акценты */
+
+.badge.bg-success-subtle {
+  background-color: var(--beauty-accent-soft) !important;
+  color: var(--beauty-primary) !important;
+}
+
+.badge.bg-danger-subtle {
+  background-color: rgba(214, 51, 132, 0.08) !important;
+  color: #b0276c !important;
+}
+
+/* Таблицы в админке */
+
+.table thead.table-light {
+  background-color: #fff5fa;
+}
+
+.table tbody tr.table-active {
+  background-color: #ffe9f3;
+}
+
+/* Footer */
+
+footer.bg-dark {
+  background: #2b1c24 !important;
+  border-top: 1px solid rgba(214, 51, 132, 0.18);
+}
