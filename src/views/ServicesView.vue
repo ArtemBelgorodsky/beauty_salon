@@ -98,7 +98,7 @@ function confirmBooking() {
   selectedServiceId.value = null
   showSuccessModal.value = true
   
-  // Автоматически скрываем модальное окно через 5 секунд
+
   setTimeout(() => {
     showSuccessModal.value = false
   }, 5000)

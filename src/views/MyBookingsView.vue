@@ -62,8 +62,7 @@ function parseDateTime(dateStr, timeStr) {
 }
 
 const myBookings = computed(() => {
-  // ВАЖНО: всегда читаем из реактивного стора, не кэшируем currentUser/ID отдельно,
-  // чтобы изменения после записи сразу попадали сюда.
+
   const user = authStore.currentUser
   if (!authStore.isAuthenticated || !user) return []
 
